@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rasika Khandare | Principal Consultant & Architect (Azure & Salesforce) - WarbleCloud LLC</title>
+  <meta name="description" content="Portfolio of Rasika Khandare, Principal Consultant & Architect at WarbleCloud LLC specializing in Microsoft Azure, Salesforce Agentforce, Data Cloud, and Enterprise Multi-Cloud Integrations." />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              azure: '#0078D4',
+              salesforce: '#00A1E0',
+              accent: '#38bdf8',
+              navy: '#0b132b',
+              dark: '#0a0f1d',
+              card: '#111827',
+              border: '#1f2937'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Google Fonts & Lucide Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* Custom glow effects and scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0a0f1d;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #0078D4;
+    }
+    .gradient-border {
+      background: linear-gradient(135deg, rgba(0,120,212,0.4), rgba(0,161,224,0.1), rgba(255,255,255,0.05));
+    }
+    .hero-glow {
+      background: radial-gradient(circle at 50% 30%, rgba(0, 120, 212, 0.18) 0%, rgba(0, 161, 224, 0.08) 35%, transparent 70%);
+    }
+    .badge-glow {
+      box-shadow: 0 0 15px rgba(0, 161, 224, 0.25);
+    }
+  </style>
+</head>
+
+<body class="bg-[#0a0f1d] text-slate-200 font-sans antialiased selection:bg-brand-azure selection:text-white min-h-screen">
+
+  <!-- ================================= NAVIGATION ================================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-[#0a0f1d]/85 border-b border-slate-800/80 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-azure to-brand-salesforce flex items-center justify-center font-bold text-white shadow-lg shadow-brand-azure/20 group-hover:scale-105 transition-transform">
+          RK
+        </div>
+        <div>
+          <span class="font-bold text-lg text-white tracking-tight group-hover:text-brand-salesforce transition-colors">Rasika Khandare</span>
+          <span class="block text-xs text-slate-400 font-medium">Principal Architect · WarbleCloud</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-white transition-colors">About</a>
+        <a href="#warblecloud" class="hover:text-brand-salesforce transition-colors flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          WarbleCloud
+        </a>
+        <a href="#experience" class="hover:text-white transition-colors">Experience</a>
+        <a href="#architecture" class="hover:text-white transition-colors">Architecture</a>
+        <a href="#skills" class="hover:text-white transition-colors">Skills</a>
+        <a href="#certifications" class="hover:text-white transition-colors">Certifications</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="Rasika_Khandare_Principal_Architect_Resume.html" target="_blank" class="px-4 py-2 text-xs font-semibold rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition flex items-center gap-2 shadow-sm">
+          <i data-lucide="file-text" class="w-4 h-4 text-brand-salesforce"></i>
+          Resume PDF
+        </a>
+        <a href="#contact" class="px-4 py-2 text-xs font-semibold rounded-lg bg-gradient-to-r from-brand-azure to-brand-salesforce hover:opacity-95 text-white transition flex items-center gap-2 shadow-lg shadow-brand-azure/20">
+          <i data-lucide="send" class="w-4 h-4"></i>
+          Let's Connect
+        </a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <button id="mobileMenuBtn" class="md:hidden p-2 text-slate-400 hover:text-white" aria-label="Toggle menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobileMenu" class="hidden md:hidden bg-[#0d1527] border-b border-slate-800 px-6 py-5 space-y-3">
+      <a href="#about" class="block text-slate-300 hover:text-white py-1">About</a>
+      <a href="#warblecloud" class="block text-brand-salesforce font-medium py-1">WarbleCloud LLC Experience</a>
+      <a href="#experience" class="block text-slate-300 hover:text-white py-1">Career Timeline</a>
+      <a href="#architecture" class="block text-slate-300 hover:text-white py-1">Architecture Blueprints</a>
+      <a href="#skills" class="block text-slate-300 hover:text-white py-1">Skills & Tools</a>
+      <a href="#certifications" class="block text-slate-300 hover:text-white py-1">Certifications</a>
+      <a href="Rasika_Khandare_Principal_Architect_Resume.html" target="_blank" class="block text-slate-300 hover:text-white py-1">View Resume</a>
+      <a href="#contact" class="block text-brand-azure font-medium py-1">Contact</a>
+    </div>
+  </header>
+
+  <!-- ================================= HERO SECTION ================================= -->
+  <section class="relative pt-36 pb-20 md:pt-44 md:pb-32 hero-glow overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Top Pill -->
+      <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-slate-900/90 border border-slate-700/80 backdrop-blur-md mb-8 badge-glow">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+        <span class="text-xs font-semibold tracking-wide text-slate-200">
+          Principal Consultant & Architect @ <span class="text-brand-salesforce font-bold">WarbleCloud LLC</span>
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Hero Text -->
+        <div class="lg:col-span-8 space-y-6 text-left">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
+            Bridging <span class="bg-gradient-to-r from-blue-400 via-sky-300 to-cyan-300 bg-clip-text text-transparent">Microsoft Azure</span> &amp; 
+            <span class="bg-gradient-to-r from-sky-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">Salesforce</span> Enterprise Scale.
+          </h1>
+
+          <p class="text-lg sm:text-xl text-slate-300 font-normal leading-relaxed max-w-2xl">
+            8+ years architecting mission-critical multi-cloud ecosystems, autonomous 
+            <span class="text-white font-semibold">Agentforce AI workflows</span>, 
+            <span class="text-white font-semibold">Salesforce Data Cloud</span>, and 
+            <span class="text-white font-semibold">Azure Integration Services</span>. Transforming enterprise CRM into intelligent, event-driven platforms.
+          </p>
+
+          <!-- Badges / Tech Highlights -->
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="px-3 py-1.5 text-xs font-medium rounded-md bg-blue-950/60 text-blue-300 border border-blue-800/60 flex items-center gap-1.5">
+              <i data-lucide="cloud" class="w-3.5 h-3.5 text-blue-400"></i> Azure Integration Services
+            </span>
+            <span class="px-3 py-1.5 text-xs font-medium rounded-md bg-sky-950/60 text-sky-300 border border-sky-800/60 flex items-center gap-1.5">
+              <i data-lucide="bot" class="w-3.5 h-3.5 text-sky-400"></i> Salesforce Agentforce & AI
+            </span>
+            <span class="px-3 py-1.5 text-xs font-medium rounded-md bg-indigo-950/60 text-indigo-300 border border-indigo-800/60 flex items-center gap-1.5">
+              <i data-lucide="database" class="w-3.5 h-3.5 text-indigo-400"></i> Salesforce Data Cloud
+            </span>
+            <span class="px-3 py-1.5 text-xs font-medium rounded-md bg-cyan-950/60 text-cyan-300 border border-cyan-800/60 flex items-center gap-1.5">
+              <i data-lucide="phone-call" class="w-3.5 h-3.5 text-cyan-400"></i> Vonage Cloud & Stripe
+            </span>
+            <span class="px-3 py-1.5 text-xs font-medium rounded-md bg-emerald-950/60 text-emerald-300 border border-emerald-800/60 flex items-center gap-1.5">
+              <i data-lucide="git-branch" class="w-3.5 h-3.5 text-emerald-400"></i> Azure DevOps CI/CD
+            </span>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-wrap items-center gap-4 pt-4">
+            <a href="#warblecloud" class="px-6 py-3.5 rounded-xl font-semibold text-sm bg-gradient-to-r from-brand-azure to-brand-salesforce hover:shadow-xl hover:shadow-brand-azure/30 hover:scale-[1.02] text-white transition-all flex items-center gap-2">
+              <i data-lucide="compass" class="w-4 h-4"></i>
+              WarbleCloud Architecture
+            </a>
+            <a href="https://www.linkedin.com/in/rasika-khandare-4646341b4/" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded-xl font-semibold text-sm bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 transition flex items-center gap-2">
+              <i data-lucide="linkedin" class="w-4 h-4 text-blue-400"></i>
+              LinkedIn Profile
+            </a>
+            <a href="https://trailhead.com/id/rkhandare" target="_blank" rel="noopener noreferrer" class="px-5 py-3.5 rounded-xl font-semibold text-sm bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 transition flex items-center gap-2">
+              <i data-lucide="award" class="w-4 h-4 text-sky-400"></i>
+              Trailhead Profile
+            </a>
+          </div>
+        </div>
+
+        <!-- Metric Cards Widget -->
+        <div class="lg:col-span-4 space-y-4">
+          <div class="p-6 rounded-2xl bg-gradient-to-b from-slate-900/90 to-slate-950/90 border border-slate-800 shadow-2xl relative overflow-hidden">
+            <div class="absolute -right-6 -bottom-6 w-32 h-32 bg-brand-azure/10 rounded-full blur-2xl"></div>
+            
+            <div class="flex items-center justify-between pb-4 border-b border-slate-800/80">
+              <div>
+                <p class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Current Engagement</p>
+                <h3 class="text-xl font-bold text-white mt-0.5">WarbleCloud LLC</h3>
+              </div>
+              <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                Principal Architect
+              </span>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 py-4">
+              <div>
+                <span class="text-3xl font-extrabold text-white">8+</span>
+                <p class="text-xs text-slate-400 mt-1">Years Enterprise Delivery</p>
+              </div>
+              <div>
+                <span class="text-3xl font-extrabold text-brand-salesforce">5x</span>
+                <p class="text-xs text-slate-400 mt-1">Salesforce Certified</p>
+              </div>
+              <div>
+                <span class="text-3xl font-extrabold text-brand-azure">700+</span>
+                <p class="text-xs text-slate-400 mt-1">Platform Users Scaled</p>
+              </div>
+              <div>
+                <span class="text-3xl font-extrabold text-emerald-400">&lt;1s</span>
+                <p class="text-xs text-slate-400 mt-1">Real-Time Sync Latency</p>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+              <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-rose-400"></i> Pune, India</span>
+              <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-400"></i> Available for Advisory</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================= WARBLECLOUD LLC EXPERIENCE ================================= -->
+  <section id="warblecloud" class="py-24 border-t border-slate-800/80 bg-slate-950/60 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="max-w-3xl mb-14">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-900/40 text-blue-300 border border-blue-700/50 text-xs font-medium mb-3">
+          <i data-lucide="building-2" class="w-3.5 h-3.5"></i> Strategic Consulting & Architecture
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          WarbleCloud LLC Experience
+        </h2>
+        <p class="text-slate-400 text-base mt-2">
+          Driving high-velocity cloud modernization, agentic AI platforms, and seamless Azure-to-Salesforce architectures for global enterprises.
+        </p>
+      </div>
+
+      <!-- Main WarbleCloud Feature Showcase -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Left: Role & Narrative -->
+        <div class="lg:col-span-7 bg-[#0f172a]/90 rounded-2xl p-8 border border-slate-700/80 shadow-xl flex flex-col justify-between">
+          <div>
+            <div class="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-slate-800">
+              <div>
+                <h3 class="text-2xl font-bold text-white">Principal Consultant & Solutions Architect</h3>
+                <p class="text-brand-salesforce font-medium text-sm mt-0.5">WarbleCloud LLC · 2024 – Present</p>
+              </div>
+              <span class="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-brand-azure/20 text-brand-accent border border-brand-azure/40">
+                Azure &amp; Salesforce Specialization
+              </span>
+            </div>
+
+            <div class="mt-6 space-y-4 text-sm text-slate-300 leading-relaxed">
+              <p>
+                At <strong class="text-white">WarbleCloud LLC</strong>, I lead architecture and strategy for enterprise clients transitioning from legacy CRM silos to modern, intelligent multi-cloud architectures. By combining <strong class="text-blue-300">Microsoft Azure</strong> hyperscaler compute and <strong class="text-sky-300">Salesforce</strong> customer experience ecosystems, we eliminate data latency, secure enterprise identities, and orchestrate autonomous AI agents.
+              </p>
+              
+              <ul class="space-y-3 pt-2">
+                <li class="flex items-start gap-3">
+                  <div class="mt-1 p-1 rounded bg-brand-azure/20 text-brand-accent"><i data-lucide="cpu" class="w-4 h-4"></i></div>
+                  <div>
+                    <strong class="text-white">Autonomous Agentforce &amp; Azure AI Orchestration:</strong>
+                    Architected next-gen agentic workflows integrating Salesforce Agentforce with Azure OpenAI and AI Search to handle complex support triages, SRE incident loops, and automated resolution.
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <div class="mt-1 p-1 rounded bg-brand-salesforce/20 text-brand-salesforce"><i data-lucide="layers" class="w-4 h-4"></i></div>
+                  <div>
+                    <strong class="text-white">Azure Integration Services &amp; Data Cloud:</strong>
+                    Designed event-driven enterprise service buses using Azure APIM, Logic Apps, and Service Bus to ingest millions of telemetry events into Salesforce Data Cloud with zero-copy federation.
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <div class="mt-1 p-1 rounded bg-emerald-500/20 text-emerald-400"><i data-lucide="shield-check" class="w-4 h-4"></i></div>
+                  <div>
+                    <strong class="text-white">Zero-Trust Enterprise Security:</strong>
+                    Engineered unified SSO and RBAC governance across Microsoft Entra ID (Azure AD), Salesforce Shield, Key Vault, and OAuth 2.0 / SAML 2.0 standards.
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <div class="mt-1 p-1 rounded bg-purple-500/20 text-purple-400"><i data-lucide="git-merge" class="w-4 h-4"></i></div>
+                  <div>
+                    <strong class="text-white">DevOps &amp; Infrastructure as Code:</strong>
+                    Standardized CI/CD release engineering via Azure DevOps YAML pipelines, SFDX CLI, automated Jest regression tests, and GitOps workflows, reducing delivery risk by 70%.
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-slate-800 flex flex-wrap gap-2">
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono">Azure Logic Apps</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono">Azure Service Bus</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono">Agentforce</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono">Data Cloud</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono">Entra ID (Azure AD)</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 font-mono">Azure DevOps</span>
+          </div>
+        </div>
+
+        <!-- Right: Deliverables & Quantified Impact -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="bg-gradient-to-br from-slate-900 to-blue-950/40 rounded-2xl p-7 border border-slate-800 shadow-xl">
+            <h4 class="text-base font-bold text-white flex items-center gap-2 mb-4">
+              <i data-lucide="target" class="w-4 h-4 text-emerald-400"></i> Key Architectural Achievements
+            </h4>
+            <div class="space-y-4 text-sm text-slate-300">
+              <div class="p-3.5 rounded-xl bg-slate-800/60 border border-slate-700/60">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-semibold text-white">Sub-Second Cross-Cloud Sync</span>
+                  <span class="text-xs font-bold text-emerald-400">&lt; 850ms</span>
+                </div>
+                <p class="text-xs text-slate-400">Integrated Azure Service Bus with Salesforce Platform Events to handle 5M+ monthly webhook events without queuing bottlenecks.</p>
+              </div>
+
+              <div class="p-3.5 rounded-xl bg-slate-800/60 border border-slate-700/60">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-semibold text-white">Autonomous Ticket Deflection</span>
+                  <span class="text-xs font-bold text-brand-salesforce">45% Reduction</span>
+                </div>
+                <p class="text-xs text-slate-400">Agentforce AI agents powered by real-time Data Cloud customer telemetry resolve tier-1 technical support requests autonomously.</p>
+              </div>
+
+              <div class="p-3.5 rounded-xl bg-slate-800/60 border border-slate-700/60">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-semibold text-white">Deployment Acceleration</span>
+                  <span class="text-xs font-bold text-blue-400">65% Faster</span>
+                </div>
+                <p class="text-xs text-slate-400">Migrated manual release management to Azure DevOps multi-stage pipelines with automatic Jest unit test gating.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Advisory & Governance Box -->
+          <div class="bg-[#0f172a] rounded-2xl p-6 border border-slate-800 flex items-start gap-4">
+            <div class="p-2.5 rounded-xl bg-brand-salesforce/10 text-brand-salesforce border border-brand-salesforce/30 shrink-0">
+              <i data-lucide="users" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <h5 class="text-sm font-bold text-white">Cross-Functional Leadership</h5>
+              <p class="text-xs text-slate-400 mt-1 leading-relaxed">
+                Directing engineering squads, mentoring Salesforce developers into cloud architects, and conducting architectural design reviews (ADR) for enterprise governance.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================= CAREER TIMELINE ================================= -->
+  <section id="experience" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mb-14">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-slate-800 text-slate-300 border border-slate-700 text-xs font-medium mb-3">
+        <i data-lucide="briefcase" class="w-3.5 h-3.5 text-brand-azure"></i> Professional Journey
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+        Enterprise Career Timeline
+      </h2>
+      <p class="text-slate-400 text-base mt-2">
+        Over 8 years of continuous progression from core Salesforce development to senior multi-cloud enterprise architecture.
+      </p>
+    </div>
+
+    <!-- Timeline Wrapper -->
+    <div class="relative pl-6 sm:pl-8 border-l border-slate-800 space-y-12">
+
+      <!-- Item 1: WarbleCloud -->
+      <div class="relative group">
+        <div class="absolute -left-[31px] sm:-left-[39px] top-1 w-6 h-6 rounded-full bg-brand-azure border-4 border-[#0a0f1d] group-hover:scale-125 transition-transform shadow-lg shadow-brand-azure/30"></div>
+        <div class="bg-slate-900/80 hover:bg-slate-900 border border-slate-800 rounded-2xl p-7 transition">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+            <div>
+              <h3 class="text-xl font-bold text-white">Principal Consultant &amp; Architect — Azure &amp; Salesforce</h3>
+              <p class="text-brand-salesforce font-medium text-sm">WarbleCloud LLC</p>
+            </div>
+            <span class="px-3 py-1 text-xs font-semibold rounded-md bg-brand-azure/20 text-brand-accent">2024 – Present</span>
+          </div>
+          <p class="text-sm text-slate-300 mt-3 leading-relaxed">
+            Head of multi-cloud architectural engagements. Architecting high-scale Azure Integration Services, Salesforce Agentforce autonomous agents, Data Cloud customer 360 models, and automated CI/CD pipelines across enterprise customer deployments.
+          </p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Azure Integration Services</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Salesforce Agentforce</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Data Cloud</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Azure DevOps</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2: Accenture -->
+      <div class="relative group">
+        <div class="absolute -left-[31px] sm:-left-[39px] top-1 w-6 h-6 rounded-full bg-slate-700 border-4 border-[#0a0f1d] group-hover:scale-125 transition-transform"></div>
+        <div class="bg-slate-900/80 hover:bg-slate-900 border border-slate-800 rounded-2xl p-7 transition">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+            <div>
+              <h3 class="text-xl font-bold text-white">Application Development Senior Analyst</h3>
+              <p class="text-brand-azure font-medium text-sm">Accenture</p>
+            </div>
+            <span class="px-3 py-1 text-xs font-semibold rounded-md bg-slate-800 text-slate-300">Jan 2021 – 2024</span>
+          </div>
+          <div class="text-sm text-slate-300 mt-3 space-y-2 leading-relaxed">
+            <p>• Architected and deployed autonomous agents using <strong class="text-white">Salesforce Agentforce</strong>, empowering dynamic customer interactions and streamlining support case resolution.</p>
+            <p>• Configured advanced Agentforce agents utilizing <strong class="text-white">Salesforce Data Cloud</strong> infrastructure to provide agents with real-time, unified customer profiles for highly tailored responses.</p>
+            <p>• Integrated <strong class="text-white">Stripe</strong> payment gateway and <strong class="text-white">Slack connectors</strong> into Salesforce, establishing automated Slack swarming for critical accounts and failed payment workflows.</p>
+            <p>• Deployed <strong class="text-white">Vonage Cloud</strong> telephony within Service Cloud, introducing omnichannel screen-pops, automated call logs, and agent productivity enhancements.</p>
+            <p>• Engineered custom <strong class="text-white">Lightning Web Components (LWC)</strong> using Lightning Message Service (LMS) with full Jest unit testing coverage; built high-performance Apex triggers and Batch jobs.</p>
+            <p>• Automated CI/CD release engineering utilizing <strong class="text-white">Azure DevOps</strong>.</p>
+          </div>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Apex &amp; LWC</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Vonage Cloud</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Stripe</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Slack Swarming</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Jest Testing</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Azure DevOps</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3: Stetig Consulting -->
+      <div class="relative group">
+        <div class="absolute -left-[31px] sm:-left-[39px] top-1 w-6 h-6 rounded-full bg-slate-700 border-4 border-[#0a0f1d] group-hover:scale-125 transition-transform"></div>
+        <div class="bg-slate-900/80 hover:bg-slate-900 border border-slate-800 rounded-2xl p-7 transition">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+            <div>
+              <h3 class="text-xl font-bold text-white">Salesforce Developer</h3>
+              <p class="text-brand-salesforce font-medium text-sm">Stetig Consulting Pvt Ltd</p>
+            </div>
+            <span class="px-3 py-1 text-xs font-semibold rounded-md bg-slate-800 text-slate-300">May 2018 – Jan 2021</span>
+          </div>
+          <div class="text-sm text-slate-300 mt-3 space-y-2 leading-relaxed">
+            <p>• Led technical aspects of enterprise Salesforce implementations for over <strong class="text-white">700+ users</strong>, overseeing data migrations, systems integrations, and custom development.</p>
+            <p>• Translated complex business requirements into scalable technical architectures in direct alignment with product managers and executive stakeholders.</p>
+            <p>• Integrated third-party real estate and telecommunication services including <strong class="text-white">Ozonetel, WhatsApp, MagicBricks, and 99acres</strong> into core Salesforce CRM.</p>
+            <p>• Implemented robust lead assignment rules, automated case management, and mentored junior developers through release management cycles.</p>
+          </div>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Sales Cloud</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Service Cloud</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Ozonetel</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">WhatsApp API</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800/80 text-slate-300">Change Sets</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================================= ARCHITECTURE BLUEPRINTS ================================= -->
+  <section id="architecture" class="py-24 bg-slate-950/70 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-3xl mb-14">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-indigo-900/40 text-indigo-300 border border-indigo-700/50 text-xs font-medium mb-3">
+          <i data-lucide="network" class="w-3.5 h-3.5"></i> Enterprise Solution Architecture
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Signature Multi-Cloud Blueprints
+        </h2>
+        <p class="text-slate-400 text-base mt-2">
+          Real-world architectural patterns engineered to bridge Azure cloud infrastructure and Salesforce CRM platforms.
+        </p>
+      </div>
+
+      <!-- Tab Buttons -->
+      <div class="flex flex-wrap gap-3 mb-8">
+        <button onclick="switchArchTab('eventmesh')" id="tabBtn-eventmesh" class="arch-tab-btn px-5 py-2.5 rounded-xl font-semibold text-xs transition-all bg-brand-azure text-white shadow-lg shadow-brand-azure/20">
+          1. Azure ↔ Salesforce Event Mesh
+        </button>
+        <button onclick="switchArchTab('agentforce')" id="tabBtn-agentforce" class="arch-tab-btn px-5 py-2.5 rounded-xl font-semibold text-xs transition-all bg-slate-800 hover:bg-slate-700 text-slate-300">
+          2. Agentforce &amp; Azure OpenAI Bridge
+        </button>
+        <button onclick="switchArchTab('telephony')" id="tabBtn-telephony" class="arch-tab-btn px-5 py-2.5 rounded-xl font-semibold text-xs transition-all bg-slate-800 hover:bg-slate-700 text-slate-300">
+          3. Omnichannel Telephony &amp; Stripe
+        </button>
+      </div>
+
+      <!-- Tab Content 1: Event Mesh -->
+      <div id="archContent-eventmesh" class="arch-content block bg-slate-900/90 rounded-2xl p-8 border border-slate-800 shadow-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-6 space-y-4">
+            <span class="text-xs font-mono text-brand-salesforce font-semibold uppercase tracking-wider">Pattern: Event-Driven Multi-Cloud Synchronization</span>
+            <h3 class="text-2xl font-bold text-white">Azure Service Bus to Salesforce Data Cloud</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Provides real-time, bidirectional streaming ingestion between enterprise backend applications hosted on Microsoft Azure and Salesforce Data Cloud. Eliminates batch lag and guarantees at-least-once message delivery with dead-letter queueing.
+            </p>
+            <div class="space-y-2 text-xs text-slate-400">
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Azure APIM for policy throttling, rate limiting, and mTLS security</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Azure Service Bus Topics for topic-based pub/sub routing</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Salesforce Platform Events &amp; Streaming Ingestion API</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Change Data Capture (CDC) to publish record changes back to Azure Event Grid</div>
+            </div>
+          </div>
+          <div class="lg:col-span-6 font-mono text-xs bg-black/60 p-6 rounded-xl border border-slate-800 text-slate-300 overflow-x-auto">
+<pre class="text-blue-300">
+[Enterprise Client] ───► [Azure APIM] (mTLS / OAuth)
+                              │
+                              ▼
+[Azure Service Bus Topics] ◄──┴──► [Azure Logic Apps]
+            │
+            │  Real-Time Streaming API
+            ▼
+┌───────────────────────────────────────────────┐
+│         SALESFORCE DATA CLOUD                 │
+│   Unified Customer Profile Data Lakehouse     │
+│                     │                         │
+│                     ▼                         │
+│         [Salesforce Agentforce]               │
+└───────────────────────────────────────────────┘
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content 2: Agentforce -->
+      <div id="archContent-agentforce" class="arch-content hidden bg-slate-900/90 rounded-2xl p-8 border border-slate-800 shadow-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-6 space-y-4">
+            <span class="text-xs font-mono text-brand-salesforce font-semibold uppercase tracking-wider">Pattern: Autonomous Agentic AI &amp; SRE Automation</span>
+            <h3 class="text-2xl font-bold text-white">Agentforce Autonomous Agent &amp; Azure OpenAI Bridge</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Equips customer support and SRE teams with autonomous agents capable of diagnosing incidents, synthesizing runbooks from Azure AI Search, and orchestrating instant Slack swarming across engineering pods.
+            </p>
+            <div class="space-y-2 text-xs text-slate-400">
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Salesforce Agentforce topic &amp; action resolution pipeline</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Azure OpenAI Service fine-tuned embeddings for knowledge grounding</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Automated Slack swarming channel provisioning for severity-1 tickets</div>
+            </div>
+          </div>
+          <div class="lg:col-span-6 font-mono text-xs bg-black/60 p-6 rounded-xl border border-slate-800 text-slate-300 overflow-x-auto">
+<pre class="text-sky-300">
+[Incoming Case / Incident]
+            │
+            ▼
+[Salesforce Agentforce Agent]
+            │
+            ├─► Grounding: [Salesforce Data Cloud 360]
+            │
+            ├─► AI Inference: [Azure OpenAI / AI Foundry]
+            │
+            └─► Action: [Slack Swarming &amp; Auto-Remediation]
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content 3: Telephony -->
+      <div id="archContent-telephony" class="arch-content hidden bg-slate-900/90 rounded-2xl p-8 border border-slate-800 shadow-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-6 space-y-4">
+            <span class="text-xs font-mono text-brand-salesforce font-semibold uppercase tracking-wider">Pattern: Omnichannel Telephony &amp; Embedded Financial Services</span>
+            <h3 class="text-2xl font-bold text-white">Vonage Cloud Telephony &amp; Stripe Payment Gateway</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Provides unified contact center operations inside Service Cloud. Agents receive incoming call screen-pops, automated audio transcription, and can process recurring subscriptions via Stripe directly within custom Lightning Web Components.
+            </p>
+            <div class="space-y-2 text-xs text-slate-400">
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Vonage Cloud CTI integration with automated call logging</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Stripe webhooks verified and processed via Apex REST listeners</div>
+              <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> LWC &amp; Lightning Message Service (LMS) cross-component coordination</div>
+            </div>
+          </div>
+          <div class="lg:col-span-6 font-mono text-xs bg-black/60 p-6 rounded-xl border border-slate-800 text-slate-300 overflow-x-auto">
+<pre class="text-cyan-300">
+[Vonage Cloud Voice] ──► [CTI Adapter] ──► [Service Cloud Screen-Pop]
+                                                    │
+                                                    ▼
+[Stripe Payment Engine] ◄── [Apex REST] ◄── [LWC Checkout Component]
+            │
+            ▼
+[Automated Receipt &amp; Subscription Synced to Salesforce]
+</pre>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================================= SKILLS MATRIX ================================= -->
+  <section id="skills" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mb-14">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-slate-800 text-slate-300 border border-slate-700 text-xs font-medium mb-3">
+        <i data-lucide="code" class="w-3.5 h-3.5 text-brand-salesforce"></i> Technical Arsenal
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+        Core Competencies &amp; Skills
+      </h2>
+      <p class="text-slate-400 text-base mt-2">
+        A deep full-stack and multi-cloud toolkit built across 8+ years of production engineering.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <!-- Col 1: Azure -->
+      <div class="bg-slate-900/80 rounded-2xl p-6 border border-slate-800 hover:border-brand-azure/60 transition">
+        <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-brand-azure flex items-center justify-center mb-4">
+          <i data-lucide="cloud" class="w-5 h-5"></i>
+        </div>
+        <h3 class="text-lg font-bold text-white mb-2">Microsoft Azure</h3>
+        <ul class="text-sm text-slate-300 space-y-2">
+          <li>• Azure Integration Services</li>
+          <li>• Azure API Management (APIM)</li>
+          <li>• Azure Logic Apps &amp; Functions</li>
+          <li>• Azure Service Bus &amp; Event Grid</li>
+          <li>• Azure OpenAI &amp; AI Foundry</li>
+          <li>• Entra ID (Azure AD) / SSO</li>
+          <li>• Azure Monitor &amp; App Insights</li>
+        </ul>
+      </div>
+
+      <!-- Col 2: Salesforce -->
+      <div class="bg-slate-900/80 rounded-2xl p-6 border border-slate-800 hover:border-brand-salesforce/60 transition">
+        <div class="w-10 h-10 rounded-xl bg-sky-500/10 text-brand-salesforce flex items-center justify-center mb-4">
+          <i data-lucide="cpu" class="w-5 h-5"></i>
+        </div>
+        <h3 class="text-lg font-bold text-white mb-2">Salesforce Ecosystem</h3>
+        <ul class="text-sm text-slate-300 space-y-2">
+          <li>• Salesforce Agentforce (AI)</li>
+          <li>• Salesforce Data Cloud</li>
+          <li>• Sales &amp; Service Cloud</li>
+          <li>• Experience Cloud</li>
+          <li>• Salesforce Shield &amp; Security</li>
+          <li>• Platform Events &amp; CDC</li>
+          <li>• Flow Orchestrator &amp; Triggers</li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Development -->
+      <div class="bg-slate-900/80 rounded-2xl p-6 border border-slate-800 hover:border-indigo-500/60 transition">
+        <div class="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center mb-4">
+          <i data-lucide="terminal" class="w-5 h-5"></i>
+        </div>
+        <h3 class="text-lg font-bold text-white mb-2">Custom Development</h3>
+        <ul class="text-sm text-slate-300 space-y-2">
+          <li>• Apex (Async, Batch, Triggers)</li>
+          <li>• Lightning Web Components (LWC)</li>
+          <li>• Lightning Message Service (LMS)</li>
+          <li>• JavaScript (ES6+) &amp; HTML5</li>
+          <li>• Visualforce &amp; Aura</li>
+          <li>• SOQL &amp; SOSL Query Tuning</li>
+          <li>• Jest Unit Testing Framework</li>
+        </ul>
+      </div>
+
+      <!-- Col 4: DevOps & Integrations -->
+      <div class="bg-slate-900/80 rounded-2xl p-6 border border-slate-800 hover:border-emerald-500/60 transition">
+        <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4">
+          <i data-lucide="git-pull-request" class="w-5 h-5"></i>
+        </div>
+        <h3 class="text-lg font-bold text-white mb-2">DevOps &amp; Integrations</h3>
+        <ul class="text-sm text-slate-300 space-y-2">
+          <li>• Azure DevOps YAML Pipelines</li>
+          <li>• Git, GitHub &amp; Branching models</li>
+          <li>• Vonage Cloud Telephony CTI</li>
+          <li>• Stripe Payment Gateways</li>
+          <li>• Slack Connectors &amp; Swarming</li>
+          <li>• RESTful &amp; SOAP Web Services</li>
+          <li>• SFDX CLI &amp; Scratch Orgs</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================================= CERTIFICATIONS ================================= -->
+  <section id="certifications" class="py-24 bg-slate-950/70 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-3xl mb-14">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-amber-900/40 text-amber-300 border border-amber-700/50 text-xs font-medium mb-3">
+          <i data-lucide="award" class="w-3.5 h-3.5"></i> Verified Credentials
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Certifications &amp; Accreditations
+        </h2>
+        <p class="text-slate-400 text-base mt-2">
+          Formally certified across Salesforce development, architecture, and business consulting.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Cert 1 -->
+        <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800 hover:border-brand-salesforce transition flex items-start gap-4">
+          <div class="p-3 rounded-xl bg-brand-salesforce/10 text-brand-salesforce shrink-0">
+            <i data-lucide="code-2" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-white text-base">Salesforce Certified Platform Developer I</h4>
+            <p class="text-xs text-slate-400 mt-1">Apex, LWC, Data modeling, Governor limits &amp; Jest</p>
+            <span class="inline-block mt-3 text-xs font-semibold text-brand-salesforce">Credential Verified ✓</span>
+          </div>
+        </div>
+
+        <!-- Cert 2 -->
+        <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800 hover:border-brand-salesforce transition flex items-start gap-4">
+          <div class="p-3 rounded-xl bg-brand-salesforce/10 text-brand-salesforce shrink-0">
+            <i data-lucide="briefcase" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-white text-base">Salesforce Certified Sales Cloud Consultant</h4>
+            <p class="text-xs text-slate-400 mt-1">Lead-to-Cash, Opportunity pipelines, Forecasting &amp; CRM</p>
+            <span class="inline-block mt-3 text-xs font-semibold text-brand-salesforce">Credential Verified ✓</span>
+          </div>
+        </div>
+
+        <!-- Cert 3 -->
+        <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800 hover:border-brand-salesforce transition flex items-start gap-4">
+          <div class="p-3 rounded-xl bg-brand-salesforce/10 text-brand-salesforce shrink-0">
+            <i data-lucide="shield" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-white text-base">Salesforce Certified Advanced Administrator</h4>
+            <p class="text-xs text-slate-400 mt-1">Complex security, Object architecture, Permissions &amp; Audit</p>
+            <span class="inline-block mt-3 text-xs font-semibold text-brand-salesforce">Credential Verified ✓</span>
+          </div>
+        </div>
+
+        <!-- Cert 4 -->
+        <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800 hover:border-brand-salesforce transition flex items-start gap-4">
+          <div class="p-3 rounded-xl bg-brand-salesforce/10 text-brand-salesforce shrink-0">
+            <i data-lucide="settings" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-white text-base">Salesforce Certified Administrator</h4>
+            <p class="text-xs text-slate-400 mt-1">Standard objects, Process automation, Reports &amp; Dashboards</p>
+            <span class="inline-block mt-3 text-xs font-semibold text-brand-salesforce">Credential Verified ✓</span>
+          </div>
+        </div>
+
+        <!-- Cert 5 -->
+        <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800 hover:border-brand-salesforce transition flex items-start gap-4">
+          <div class="p-3 rounded-xl bg-brand-salesforce/10 text-brand-salesforce shrink-0">
+            <i data-lucide="layout" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-white text-base">Salesforce Certified App Builder</h4>
+            <p class="text-xs text-slate-400 mt-1">Declarative development, Lightning App Builder &amp; Workflows</p>
+            <span class="inline-block mt-3 text-xs font-semibold text-brand-salesforce">Credential Verified ✓</span>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800 hover:border-emerald-500 transition flex items-start gap-4">
+          <div class="p-3 rounded-xl bg-emerald-500/10 text-emerald-400 shrink-0">
+            <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-white text-base">Bachelor of Engineering</h4>
+            <p class="text-xs text-slate-400 mt-1">Electronics &amp; Telecommunication Engineering</p>
+            <span class="inline-block mt-3 text-xs font-semibold text-emerald-400">Engineering Degree ✓</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================= CONTACT SECTION ================================= -->
+  <section id="contact" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-gradient-to-r from-blue-950/60 via-slate-900 to-indigo-950/60 rounded-3xl p-8 sm:p-14 border border-slate-800 text-center relative overflow-hidden shadow-2xl">
+      <div class="max-w-2xl mx-auto space-y-6">
+        <span class="px-4 py-1.5 rounded-full text-xs font-semibold bg-brand-salesforce/20 text-brand-accent border border-brand-salesforce/30 inline-block">
+          Let's Build Resilient Architecture Together
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Looking for Azure &amp; Salesforce Multi-Cloud Architecture Leadership?
+        </h2>
+        <p class="text-slate-300 text-base leading-relaxed">
+          Whether you need advisory on Agentforce AI adoption, Azure integration services, Salesforce Data Cloud unification, or DevOps transformation, I am available to discuss enterprise consulting opportunities.
+        </p>
+
+        <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+          <a href="mailto:rasika.a.khandare@gmail.com" class="px-6 py-3.5 rounded-xl font-semibold text-sm bg-gradient-to-r from-brand-azure to-brand-salesforce hover:shadow-xl hover:shadow-brand-azure/30 text-white transition flex items-center gap-2">
+            <i data-lucide="mail" class="w-4 h-4"></i>
+            rasika.a.khandare@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/rasika-khandare-4646341b4/" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded-xl font-semibold text-sm bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 transition flex items-center gap-2">
+            <i data-lucide="linkedin" class="w-4 h-4 text-blue-400"></i>
+            Connect on LinkedIn
+          </a>
+          <a href="tel:+918830509809" class="px-5 py-3.5 rounded-xl font-semibold text-sm bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 transition flex items-center gap-2">
+            <i data-lucide="phone" class="w-4 h-4 text-emerald-400"></i>
+            +91 88305 09809
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================= FOOTER ================================= -->
+  <footer class="border-t border-slate-900 py-12 text-center text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+      <div class="flex justify-center items-center gap-6 text-sm text-slate-400">
+        <a href="https://github.com/KhandareR" target="_blank" class="hover:text-white transition flex items-center gap-1.5"><i data-lucide="github" class="w-4 h-4"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/rasika-khandare-4646341b4/" target="_blank" class="hover:text-white transition flex items-center gap-1.5"><i data-lucide="linkedin" class="w-4 h-4"></i> LinkedIn</a>
+        <a href="https://trailhead.com/id/rkhandare" target="_blank" class="hover:text-white transition flex items-center gap-1.5"><i data-lucide="award" class="w-4 h-4"></i> Trailhead</a>
+        <a href="https://warblecloud.ai" target="_blank" class="hover:text-white transition flex items-center gap-1.5"><i data-lucide="globe" class="w-4 h-4"></i> WarbleCloud</a>
+      </div>
+      <p>© 2026 Rasika Khandare. Principal Consultant &amp; Architect — WarbleCloud LLC. All rights reserved.</p>
+      <p class="text-slate-400 text-[11px]">Engineered with Microsoft Azure, Salesforce Agentforce, Data Cloud &amp; Tailwind CSS.</p>
+    </div>
+  </footer>
+
+  <!-- Interactivity Scripts -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Mobile Menu Toggle
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Architecture Tabs Switcher
+    function switchArchTab(tabId) {
+      // Hide all contents
+      document.querySelectorAll('.arch-content').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.arch-content').forEach(el => el.classList.remove('block'));
+
+      // Show selected
+      const target = document.getElementById('archContent-' + tabId);
+      if (target) {
+        target.classList.remove('hidden');
+        target.classList.add('block');
+      }
+
+      // Reset buttons
+      document.querySelectorAll('.arch-tab-btn').forEach(btn => {
+        btn.classList.remove('bg-brand-azure', 'text-white', 'shadow-lg', 'shadow-brand-azure/20');
+        btn.classList.add('bg-slate-800', 'text-slate-300');
+      });
+
+      // Active button
+      const activeBtn = document.getElementById('tabBtn-' + tabId);
+      if (activeBtn) {
+        activeBtn.classList.remove('bg-slate-800', 'text-slate-300');
+        activeBtn.classList.add('bg-brand-azure', 'text-white', 'shadow-lg', 'shadow-brand-azure/20');
+      }
+
+      lucide.createIcons();
+    }
+  </script>
+</body>
+</html>

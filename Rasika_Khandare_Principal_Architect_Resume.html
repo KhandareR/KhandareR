@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rasika Khandare - Principal Consultant & Architect (Resume)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0f172a;
+      --secondary: #0078D4;
+      --salesforce: #00A1E0;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      color: var(--text);
+      background-color: #f8fafc;
+      line-height: 1.5;
+      padding: 40px 20px;
+    }
+    .resume-container {
+      max-width: 850px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 48px 56px;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      border: 1px solid var(--border);
+    }
+    .print-bar {
+      max-width: 850px;
+      margin: 0 auto 20px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--secondary);
+      color: white;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      border: none;
+      transition: background 0.2s;
+    }
+    .btn:hover {
+      background: #005a9e;
+    }
+    .btn-secondary {
+      background: #e2e8f0;
+      color: #334155;
+    }
+    .btn-secondary:hover {
+      background: #cbd5e1;
+    }
+
+    header {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: var(--primary);
+      text-transform: uppercase;
+    }
+    .title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--secondary);
+      margin-top: 4px;
+      margin-bottom: 10px;
+      letter-spacing: 0.2px;
+    }
+    .contact-info {
+      font-size: 13px;
+      color: var(--text-muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .contact-info a {
+      color: var(--secondary);
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 22px;
+    }
+    h2 {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--primary);
+      border-bottom: 1.5px solid var(--border);
+      padding-bottom: 4px;
+      margin-bottom: 12px;
+    }
+    p, li {
+      font-size: 13px;
+      color: #334155;
+    }
+    .summary-text {
+      text-align: justify;
+      line-height: 1.6;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+    .skill-category {
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .skill-category strong {
+      color: var(--primary);
+    }
+
+    .job {
+      margin-bottom: 18px;
+    }
+    .job:last-child {
+      margin-bottom: 0;
+    }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+    .job-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+    .job-company {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--secondary);
+    }
+    .job-date {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+    ul {
+      margin-top: 6px;
+      padding-left: 18px;
+    }
+    li {
+      margin-bottom: 4px;
+      line-height: 1.45;
+    }
+    li strong {
+      color: #0f172a;
+    }
+
+    .cert-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 6px 16px;
+      list-style-type: disc;
+      padding-left: 18px;
+    }
+    .cert-list li {
+      font-size: 12.5px;
+    }
+
+    @media print {
+      body {
+        background: transparent;
+        padding: 0;
+      }
+      .print-bar {
+        display: none;
+      }
+      .resume-container {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+      }
+      a {
+        text-decoration: none !important;
+        color: inherit !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="print-bar">
+    <a href="index.html" class="btn btn-secondary">← Back to Portfolio Website</a>
+    <button onclick="window.print()" class="btn">🖨️ Print / Save as PDF</button>
+  </div>
+
+  <div class="resume-container">
+    <header>
+      <h1>Rasika Khandare</h1>
+      <div class="title">Principal Consultant &amp; Solutions Architect — Specialized in Azure &amp; Salesforce</div>
+      <div class="contact-info">
+        <span>📍 Pune, Maharashtra, India</span>
+        <span>📞 +91 88305 09809</span>
+        <span>✉️ <a href="mailto:rasika.a.khandare@gmail.com">rasika.a.khandare@gmail.com</a></span>
+        <span>💼 <a href="https://www.linkedin.com/in/rasika-khandare-4646341b4/" target="_blank">LinkedIn</a></span>
+        <span>⚡ <a href="https://trailhead.com/id/rkhandare" target="_blank">Trailhead</a></span>
+        <span>🐙 <a href="https://github.com/KhandareR" target="_blank">GitHub</a></span>
+      </div>
+    </header>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <p class="summary-text">
+        Results-oriented <strong>Principal Consultant and Solutions Architect</strong> with <strong>8+ years of experience</strong> designing, architecting, and deploying resilient enterprise solutions across <strong>Microsoft Azure</strong> and <strong>Salesforce CRM ecosystems</strong>. Proven track record at <strong>WarbleCloud LLC</strong> spearheading multi-cloud digital transformations, bridging hyperscaler cloud services with mission-critical CRM platforms. Deep technical specialization in <strong>Salesforce Agentforce (Autonomous AI Agents)</strong>, <strong>Salesforce Data Cloud</strong>, <strong>Azure Integration Services</strong> (API Management, Logic Apps, Service Bus, Event Grid, Functions), and enterprise telephony/payment integrations (<strong>Vonage Cloud</strong>, <strong>Stripe</strong>, <strong>Slack</strong>). Adept at establishing DevOps maturity through Azure DevOps CI/CD pipelines, mentoring engineering squads, and advising enterprise executives on cloud governance and scalability.
+      </p>
+    </section>
+
+    <section>
+      <h2>Core Competencies &amp; Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <strong>Microsoft Azure Cloud:</strong> Azure Integration Services (APIM, Logic Apps, Service Bus, Event Grid), Azure Functions, Azure OpenAI Service, AI Search, Microsoft Entra ID (Azure AD), Azure DevOps, Azure Monitor &amp; App Insights, Key Vault.
+        </div>
+        <div class="skill-category">
+          <strong>Salesforce Core &amp; AI:</strong> Salesforce Agentforce (Autonomous &amp; Advanced Agents), Salesforce Data Cloud, Einstein 1, Sales Cloud, Service Cloud, Experience Cloud, Salesforce Shield, Platform Events, Change Data Capture (CDC).
+        </div>
+        <div class="skill-category">
+          <strong>Custom Development:</strong> Apex (Asynchronous, Batch, Triggers), Lightning Web Components (LWC), Lightning Message Service (LMS), Jest Unit Testing, JavaScript (ES6+), Visualforce, SOQL / SOSL.
+        </div>
+        <div class="skill-category">
+          <strong>Integrations &amp; Telephony:</strong> RESTful APIs, SOAP Web Services, Vonage Cloud Telephony CTI, Stripe Payment Gateway, Slack Connectors &amp; Swarming, Ozonetel, WhatsApp Business API.
+        </div>
+        <div class="skill-category">
+          <strong>DevOps &amp; Governance:</strong> Azure DevOps (YAML Multi-Stage Pipelines), Git, VS Code, Salesforce DX, Change Sets, Data Loader, Zero-Trust Identity (OAuth 2.0 / SAML 2.0).
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <span class="job-title">Principal Consultant &amp; Solutions Architect — Azure &amp; Salesforce</span>
+            <span class="job-company"> | WarbleCloud LLC</span>
+          </div>
+          <span class="job-date">2024 – Present</span>
+        </div>
+        <ul>
+          <li>Architect enterprise multi-cloud solutions bridging Microsoft Azure infrastructure and Salesforce CRM ecosystems, delivering decoupled, resilient, and event-driven architectures.</li>
+          <li>Spearhead autonomous agentic AI workflows integrating <strong>Salesforce Agentforce</strong> and <strong>Azure OpenAI Service / AI Foundry</strong>, driving intelligent ticket triaging, SRE incident loops, and automated resolution.</li>
+          <li>Design hybrid integration fabrics using <strong>Azure Integration Services</strong> (Azure API Management, Logic Apps, Service Bus, Event Grid) and <strong>Salesforce Data Cloud / Platform Events</strong>, sustaining sub-second data synchronization for high-velocity transactional events.</li>
+          <li>Establish enterprise-wide zero-trust security and identity governance combining <strong>Microsoft Entra ID (Azure AD)</strong>, <strong>Salesforce Shield</strong>, and automated OAuth 2.0 / SAML single sign-on (SSO).</li>
+          <li>Build automated CI/CD release engineering standards utilizing <strong>Azure DevOps YAML pipelines</strong>, Salesforce DX (SFDX), automated Jest unit tests, and Apex regression suites, accelerating deployment cycles by 65%.</li>
+          <li>Advise enterprise C-suite stakeholders and lead cross-functional engineering pods across architectural reviews, cloud migration roadmaps, and multi-tenant performance optimizations.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <span class="job-title">Application Development Senior Analyst</span>
+            <span class="job-company"> | Accenture</span>
+          </div>
+          <span class="job-date">Jan 2021 – 2024</span>
+        </div>
+        <ul>
+          <li>Architected and implemented autonomous agents using <strong>Salesforce Agentforce</strong>, empowering dynamic customer interactions and streamlining support case resolution by 40%.</li>
+          <li>Configured advanced Agentforce agents utilizing <strong>Salesforce Data Cloud</strong> infrastructure to supply real-time, unified customer profiles for hyper-personalized agent decisions.</li>
+          <li>Integrated <strong>Stripe</strong> payment processing and <strong>Slack connectors</strong> into Salesforce, establishing automated Slack swarming channels for high-priority support escalations and real-time transaction updates.</li>
+          <li>Deployed <strong>Vonage Cloud</strong> telephony integration with Service Cloud, establishing screen-pops, automated call logging, and seamless routing for enterprise contact centers.</li>
+          <li>Designed modular <strong>Lightning Web Components (LWC)</strong> with <strong>Lightning Message Service (LMS)</strong> and comprehensive Jest unit test coverage; developed high-throughput batch and asynchronous Apex triggers adhering to governor limits.</li>
+          <li>Orchestrated enterprise release management and deployment pipelines through <strong>Azure DevOps</strong> and Git version control.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <span class="job-title">Salesforce Developer</span>
+            <span class="job-company"> | Stetig Consulting Pvt Ltd</span>
+          </div>
+          <span class="job-date">May 2018 – Jan 2021</span>
+        </div>
+        <ul>
+          <li>Led end-to-end technical implementations for <strong>700+ enterprise users</strong>, overseeing data migrations, systems integrations, and custom development.</li>
+          <li>Translated complex business requirements into scalable technical architectures in direct alignment with product managers and executive stakeholders.</li>
+          <li>Built custom connectors integrating <strong>Ozonetel, WhatsApp, MagicBricks, and 99acres</strong> with core Salesforce Sales &amp; Service Cloud.</li>
+          <li>Engineered automated lead routing, case escalation hierarchies, and advanced approval processes to maximize pipeline conversion.</li>
+          <li>Mentored junior engineers, established code review standards, and managed change set releases and environment synchronizations.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Certifications &amp; Credentials</h2>
+      <ul class="cert-list">
+        <li>Salesforce Certified Platform Developer I (PDI)</li>
+        <li>Salesforce Certified Sales Cloud Consultant</li>
+        <li>Salesforce Certified Advanced Administrator</li>
+        <li>Salesforce Certified Administrator</li>
+        <li>Salesforce Certified App Builder</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p><strong>Bachelor of Engineering in Electronics &amp; Telecommunication</strong></p>
+    </section>
+  </div>
+
+</body>
+</html>

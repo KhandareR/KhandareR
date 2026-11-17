@@ -1,0 +1,8 @@
+# Dependencies & temporary files
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+read_resume.ps1
+extracted_resume.txt
