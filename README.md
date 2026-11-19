@@ -4,11 +4,12 @@
 ### **Principal Consultant & Enterprise Solutions Architect**
 #### **Specialized in Microsoft Azure & Salesforce Multi-Cloud Architecture**
 
+[![Live Portfolio](https://img.shields.io/badge/Live_Portfolio-Website-blue?style=for-the-badge&logo=googlechrome&logoColor=white)](https://khandarer.github.io/KhandareR/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rasika-khandare-4646341b4/)
 [![Trailhead](https://img.shields.io/badge/Trailhead-00A1E0?style=for-the-badge&logo=salesforce&logoColor=white)](https://trailhead.com/id/rkhandare)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rasika.a.khandare@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-KhandareR-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/KhandareR)
-[![Location](https://img.shields.io/badge/Location-Pune%2C%20India-blue?style=for-the-badge&logo=googlemaps&logoColor=white)](https://maps.google.com/?q=Pune,+Maharashtra,+India)
+[![Location](https://img.shields.io/badge/Location-Pune%2C%20India-0078D4?style=for-the-badge&logo=googlemaps&logoColor=white)](https://maps.google.com/?q=Pune,+Maharashtra,+India)
 
 <br/>
 
