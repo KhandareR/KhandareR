@@ -4,7 +4,7 @@
 ### **Principal Consultant & Enterprise Solutions Architect**
 #### **Specialized in Microsoft Azure & Salesforce Multi-Cloud Architecture**
 
-[![Live Portfolio](https://img.shields.io/badge/Live_Portfolio-Website-blue?style=for-the-badge&logo=googlechrome&logoColor=white)](https://khandarer.github.io/KhandareR/)
+[![Live Portfolio](https://img.shields.io/badge/Live_Portfolio-khandarer.github.io-blue?style=for-the-badge&logo=googlechrome&logoColor=white)](https://khandarer.github.io/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rasika-khandare-4646341b4/)
 [![Trailhead](https://img.shields.io/badge/Trailhead-00A1E0?style=for-the-badge&logo=salesforce&logoColor=white)](https://trailhead.com/id/rkhandare)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:rasika.a.khandare@gmail.com)
